@@ -2,28 +2,52 @@
 AccessModifierOffset: -4
 
 AlignAfterOpenBracket: Align
+AlignArrayOfStructures: Right
 AlignConsecutiveAssignments: AcrossComments
+# does not work for some reason
+#   Enabled: true
+#   AcrossEmptyLine: false
+#   AcrossComments: true
+#   AlignCompound: true
+#   PadOperators: false
 AlignConsecutiveBitFields: AcrossComments
+# does not work for some reason
+#   Enabled: true
+#   AcrossEmptyLines: false
+#   AcrossComments: true
 AlignConsecutiveDeclarations: AcrossComments
-AlignConsecutiveMacros: AcrossComments
-AlignEscapedNewlines: Left
+# does not work for some reason
+#   Enabled: true
+#   AcrossEmptyLines: false
+#   AcrossComments: true
+# does not work for some reason
+# AlignConsecutiveMacros: AcrossComments
+#   Enabled: true
+#   AcrossEmptyLines: false
+#   AcrossComments: true
+AlignEscapedNewlines: Right
 AlignOperands: Align
 AlignTrailingComments: true
 
 AllowAllArgumentsOnNextLine: true
-AllowAllConstructorInitializersOnNextLine: true
+# deprecated
+# AllowAllConstructorInitializersOnNextLine: true
 AllowAllParametersOfDeclarationOnNextLine: true
-AllowShortBlocksOnASingleLine: Always
+AllowShortBlocksOnASingleLine: Empty
 AllowShortCaseLabelsOnASingleLine: true
 AllowShortEnumsOnASingleLine: true
-AllowShortFunctionsOnASingleLine: All
-AllowShortIfStatementsOnASingleLine: Always
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
 AllowShortLambdasOnASingleLine: All
 AllowShortLoopsOnASingleLine: true
 
+# deprecated
+# AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
 AlwaysBreakBeforeMultilineStrings: false
 AlwaysBreakTemplateDeclarations: Yes
+
+AttributeMacros: []
 
 BinPackArguments: true
 BinPackParameters: true
@@ -35,16 +59,16 @@ BraceWrapping:
   AfterClass: true
   AfterControlStatement: Never
   AfterEnum: true
-  AfterFunction: true
-  AfterNamespace: true
+  AfterFunction: false
+  AfterNamespace: false
   AfterObjCDeclaration: true
-  AfterStruct: true
-  AfterUnion: true
-  AfterExternBlock: true
+  AfterStruct: false
+  AfterUnion: false
+  AfterExternBlock: false
   BeforeCatch: true
-  BeforeElse: false
+  BeforeElse: true
   BeforeLambdaBody: false
-  BeforeWhile: false
+  BeforeWhile: true
   IndentBraces: false
   SplitEmptyFunction: false
   SplitEmptyRecord: false
@@ -53,6 +77,8 @@ BraceWrapping:
 BreakAfterJavaFieldAnnotations: false
 BreakBeforeBinaryOperators: None
 BreakBeforeBraces: Custom
+# does not work for some reason
+# BreakBeforeConceptDeclarations: Always
 BreakBeforeConceptDeclarations: true
 BreakBeforeTernaryOperators: false
 BreakConstructorInitializers: BeforeColon
@@ -61,8 +87,11 @@ BreakStringLiterals: true
 
 ColumnLimit: 80
 
+CommentPragmas: ""
+
 CompactNamespaces: false
-ConstructorInitializerAllOnOneLineOrOnePerLine: true
+# deprecated
+# ConstructorInitializerAllOnOneLineOrOnePerLine: true
 ConstructorInitializerIndentWidth: 4
 ContinuationIndentWidth: 4
 Cpp11BracedListStyle: false
@@ -71,39 +100,55 @@ DeriveLineEnding: false
 DerivePointerAlignment: false
 DisableFormat: false
 
-EmptyLineBeforeAccessModifier: Always
+EmptyLineAfterAccessModifier: Never
+EmptyLineBeforeAccessModifier: LogicalBlock
+
+ExperimentalAutoDetectBinPacking: false
 
 FixNamespaceComments: true
 
+ForEachMacros: []
+IfMacros: []
+
 IncludeBlocks: Regroup
 IncludeCategories:
-  - Regex:           '^"(llvm|llvm-c|clang|clang-c)/'
-    Priority:        2
-    SortPriority:    2
-    CaseSensitive:   true
-  - Regex:           '^(<|"(gtest|gmock|isl|json)/)'
-    Priority:        3
-  - Regex:           '<[[:alnum:].]+>'
-    Priority:        4
-IncludeIsMainRegex: '&'
+  - Regex: ".*"
+    Priority: 1
+    SortPriority: 0
+IncludeIsMainRegex: "$"
+IncludeIsMainSourceRegex: ""
 
-IndentCaseBlocks: false
+IndentAccessModifiers: false
+IndentCaseBlocks: true
 IndentCaseLabels: true
 IndentExternBlock: Indent
 IndentGotoLabels: true
 IndentPPDirectives: AfterHash
-IndentRequires: false
+# clang-format 15
+# IndentRequiresClause: false
 IndentWidth: 4
 IndentWrappedFunctionNames: false
+# clang-format 15
+# InsertBraces: false
 InsertTrailingCommas: None
+
+JavaImportGroups: []
+JavaScriptQuotes: Double
+JavaScriptWrapImports: true
 
 KeepEmptyLinesAtTheStartOfBlocks: false
 
+LambdaBodyIndentation: Signature
+
 Language: Cpp
+
+MacroBlockBegin: ""
+MacroBlockEnd: ""
 
 MaxEmptyLinesToKeep: 1
 
-NamespaceIndentation: All
+NamespaceIndentation: None
+NamespaceMacros: []
 
 ObjCBinPackProtocolList: Auto
 ObjCBlockIndentWidth: 4
@@ -111,11 +156,43 @@ ObjCBreakBeforeNestedBlockParam: true
 ObjCSpaceAfterProperty: false
 ObjCSpaceBeforeProtocolList: false
 
+PPIndentWidth: 4
+
+PackConstructorInitializers: BinPack
+
+PenaltyBreakAssignment: 0
+PenaltyBreakBeforeFirstCallParameter: 10
+PenaltyBreakComment: 0
+PenaltyBreakFirstLessLess: 10
+PenaltyBreakOpenParenthesis: 10
+PenaltyBreakString: 0
+PenaltyBreakTemplateDeclaration: 0
+PenaltyExcessCharacter: 100
+PenaltyIndentedWhitespace: 0
+PenaltyReturnTypeOnItsOwnLine: 100
+
 PointerAlignment: Left
+
+QualifierAlignment: Leave
+# does not work for some reason
+# QualifierOrder: ["type"]
+
+RawStringFormats: []
+
+ReferenceAlignment: Left
 
 ReflowComments: true
 
-SortIncludes: true
+RemoveBracesLLVM: true
+
+# clang-format 15
+# RequiresClausePosition: OwnLine
+
+SeparateDefinitionBlocks: Always
+
+ShortNamespaceLines: 0
+
+SortIncludes: CaseInsensitive
 SortJavaStaticImport: After
 SortUsingDeclarations: true
 
@@ -128,7 +205,18 @@ SpaceBeforeCaseColon: false
 SpaceBeforeCpp11BracedList: false
 SpaceBeforeCtorInitializerColon: true
 SpaceBeforeInheritanceColon: true
-SpaceBeforeParens: ControlStatements
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterControlStatements: true
+  AfterForeachMacros: true
+  AfterFunctionDeclarationName: false
+  AfterFunctionDefinitionName: false
+  AfterIfMacros: true
+  AfterOverloadedOperator: false
+#   does not work for some reason
+#   AfterRequiresInClause: false
+#   AfterRequiresInExpression: false
+  BeforeNonEmptyParentheses: false
 SpaceBeforeRangeBasedForLoopColon: true
 SpaceBeforeSquareBrackets: false
 SpaceInEmptyBlock: false
@@ -138,12 +226,24 @@ SpacesInAngles: false
 SpacesInCStyleCastParentheses: false
 SpacesInConditionalStatement: false
 SpacesInContainerLiterals: false
+SpacesInLineCommentPrefix: 
+  Minimum: 1
+  Maximum: 1
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
 
-Standard: Auto
+Standard: Latest
+
+StatementAttributeLikeMacros: []
+StatementMacros: []
 
 TabWidth: 4
 
+TypenameMacros: []
+
+UseCRLF: false
+
 UseTab: Never
+
+WhitespaceSensitiveMacros: []
 ...
