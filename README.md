@@ -1,6 +1,10 @@
 <p align="center">
-  [![MIT License][license-shield]][license-url]
-  [![LinkedIn][linkedin-shield]][linkedin-url]
+  <a href="https://github.com/vladislav-tkach/Booliverse/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/vladislav-tkach/Booliverse">
+  </a>
+  <a href="https://www.linkedin.com/in/vladyslav-tkach/">
+    <img src="https://img.shields.io/badge/-LinkedIn-black.svg?&logo=linkedin&colorB=555">
+  </a>
 </p>
 
 
@@ -128,13 +132,3 @@ Project Link: [https://github.com/vladislav-tkach/Booliverse](https://github.com
 ## Acknowledgements
 * [Choose an Open Source License](https://choosealicense.com)
 * [Img Shields](https://shields.io)
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-[license-shield]: https://img.shields.io/github/license/vladislav-tkach/Booliverse
-[license-url]: https://github.com/vladislav-tkach/Booliverse/blob/main/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/vladyslav-tkach/
