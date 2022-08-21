@@ -1,5 +1,7 @@
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<p align="center">
+  [![MIT License][license-shield]][license-url]
+  [![LinkedIn][linkedin-shield]][linkedin-url]
+</p>
 
 
 
@@ -59,7 +61,6 @@ Key goals I pursue:
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Qt](https://www.qt.io/)
 
 
@@ -67,7 +68,6 @@ This section should list any major frameworks that you built your project using.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
@@ -75,6 +75,7 @@ To get a local copy up and running follow these simple example steps.
 I hate prerequisites/dependencies that you have to install only to build sinle project and not use in any other way. So the only thing you will need to build this project is the C++ toolkit i.e. CMake, Build system and C++ compiler of your choice. If you don't have any tool needed installed on your PC you have two options:
 * To download it and install on your PC
 * To download it without installing only to build this project
+
 And both are automated! You only have to provide certain flags to CMake during build. 
 
 ### Installation
@@ -125,7 +126,7 @@ Project Link: [https://github.com/vladislav-tkach/Booliverse](https://github.com
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Choose an Open Source License](https://choosealicense.com)S
+* [Choose an Open Source License](https://choosealicense.com)
 * [Img Shields](https://shields.io)
 
 
