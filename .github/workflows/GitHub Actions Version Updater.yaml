@@ -1,0 +1,23 @@
+---
+name: Run GitHub Actions Version Updater
+
+on:
+  schedule:
+    # Automatically run on every Sunday
+    - cron:  '0 0 * * 0'
+
+jobs:
+  github_actions_version_updater_ubuntu:
+    name: Update GitHub Actions Version
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+      - uses: actions/checkout@v3
+
+      - name: Run GitHub Actions Version Updater
+        uses: saadmk11/github-actions-version-updater@v0.5.6
+        with:
+          # Access token with `workflow` scope is required
+          token: ${{ secrets.WORKFLOW_SECRET }}
+...
