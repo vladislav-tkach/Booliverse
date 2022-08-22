@@ -12,7 +12,7 @@ on:
       - 'releases/**'
 
 jobs:
-  lint_code_base_ubuntu:
+  super_linter_ubuntu:
     name: Lint code base
     runs-on: ubuntu-latest
 
