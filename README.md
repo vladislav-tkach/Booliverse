@@ -1,4 +1,7 @@
-<h1 align="center">
+<!-- PHONY HEADING FOR CODE LINTER -->
+<h1></h1>
+
+<p align="center">
   <a href="https://github.com/vladislav-tkach/Booliverse/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/vladislav-tkach/Booliverse">
   </a>
@@ -8,21 +11,21 @@
   <a href="https://www.linkedin.com/in/vladyslav-tkach/">
     <img src="https://img.shields.io/badge/-LinkedIn-black.svg?&logo=linkedin&colorB=555">
   </a>
-</h1>
+</p>
 
 
 
 <!-- PROJECT LOGO -->
 <p align="center">
-  <h2 align="center">Booliverse</h2>
+  <h3 align="center">Booliverse</h3>
 
-  <h3 align="center">
+  <p align="center">
     Boolean logic simulator app
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </h3>
+  </p>
 </p>
 
 
