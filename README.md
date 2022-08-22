@@ -3,27 +3,26 @@
     <img src="https://img.shields.io/github/license/vladislav-tkach/Booliverse">
   </a>
   <a href="https://github.com/marketplace/actions/super-linter">
-    <img src="https://github.com/vladislav-tkach/Booliverse/workflows/Run%20Super-Linter/badge.svg?&logo=linkedin&colorB=555">
+    <img src="https://github.com/vladislav-tkach/Booliverse/workflows/Run%20Super-Linter/badge.svg?&colorB=555">
   </a>
   <a href="https://www.linkedin.com/in/vladyslav-tkach/">
     <img src="https://img.shields.io/badge/-LinkedIn-black.svg?&logo=linkedin&colorB=555">
   </a>
-</p>
+</h1>
 
 
 
 <!-- PROJECT LOGO -->
-<br />
 <p align="center">
-  <h3 align="center">Booliverse</h3>
+  <h2 align="center">Booliverse</h2>
 
-  <p align="center">
+  <h3 align="center">
     Boolean logic simulator app
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
+  </h3>
 </p>
 
 
