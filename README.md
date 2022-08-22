@@ -2,6 +2,9 @@
   <a href="https://github.com/vladislav-tkach/Booliverse/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/vladislav-tkach/Booliverse">
   </a>
+  <a href="https://github.com/marketplace/actions/super-linter">
+    <img src="https://github.com/vladislav-tkach/Booliverse/workflows/Run%20Super-Linter/badge.svg?&logo=linkedin&colorB=555">
+  </a>
   <a href="https://www.linkedin.com/in/vladyslav-tkach/">
     <img src="https://img.shields.io/badge/-LinkedIn-black.svg?&logo=linkedin&colorB=555">
   </a>
