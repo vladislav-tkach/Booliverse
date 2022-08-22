@@ -1,4 +1,4 @@
-<p align="center">
+<h1 align="center">
   <a href="https://github.com/vladislav-tkach/Booliverse/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/vladislav-tkach/Booliverse">
   </a>
@@ -57,13 +57,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Booliverse is a boolean logic simulation app inspired by [BOOLR](http://boolr.me/)([github](https://github.com/GGBRW/BOOLR)).
+Booliverse is a boolean logic simulation app inspired by [BOOLR](http://boolr.me/)([GitHub](https://github.com/GGBRW/BOOLR)).
 
 There are many great logic simulation apps available for free as well as paid, however, I didn't find one that really suit my needs so I made this one. I want to create a free hardware design app for amateurs that enjoy engineering complex systems as well as for teachers and students that are studying computer science.
 
 Key goals I pursue:
 * Booliverse is fully free software
-* Contribution is welcome and not limited in any way 
+* Contribution is welcome and not limited in any way
 * It has to be possible to create a complex logic board (for example CPU) without performance decrease
 
 ### Built With
@@ -79,15 +79,15 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-I hate prerequisites/dependencies that you have to install only to build sinle project and not use in any other way. So the only thing you will need to build this project is the C++ toolkit i.e. CMake, Build system and C++ compiler of your choice. If you don't have any tool needed installed on your PC you have two options:
+I hate prerequisites/dependencies that you have to install only to build sinle project and not use in any other way. So the only thing you will need to build this project is the C++ toolkit i.e. CMake, build tool and C++ compiler of your choice. If you don't have any tool needed installed on your PC you have two options:
 * To download it and install on your PC
 * To download it without installing only to build this project
 
-And both are automated! You only have to provide certain flags to CMake during build. 
+And both are automated! You only have to provide certain flags to CMake during build.
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repository
    ```sh
    git clone https://github.com/vladislav-tkach/Booliverse.git
    ```
