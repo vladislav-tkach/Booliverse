@@ -1,9 +1,12 @@
-<h1 align="center">
+<!-- PHONY HEADING FOR CODE LINTER -->
+<h1 hidden></h1>
+
+<p align="center">
   <a href="https://github.com/vladislav-tkach/Booliverse/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/vladislav-tkach/Booliverse">
   </a>
   <a href="https://github.com/marketplace/actions/super-linter">
-    <img src="https://github.com/vladislav-tkach/Booliverse/workflows/Run%20Super-Linter/badge.svg?&logo=linkedin&colorB=555">
+    <img src="https://github.com/vladislav-tkach/Booliverse/workflows/Run%20Super-Linter/badge.svg?&colorB=555">
   </a>
   <a href="https://www.linkedin.com/in/vladyslav-tkach/">
     <img src="https://img.shields.io/badge/-LinkedIn-black.svg?&logo=linkedin&colorB=555">
@@ -13,7 +16,6 @@
 
 
 <!-- PROJECT LOGO -->
-<br />
 <p align="center">
   <h3 align="center">Booliverse</h3>
 
