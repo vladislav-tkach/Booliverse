@@ -1,5 +1,5 @@
 <!-- PHONY HEADING FOR CODE LINTER -->
-<h1 hidden></h1>
+<h1 style="visibility: hidden;"></h1>
 
 <p align="center">
   <a href="https://github.com/vladislav-tkach/Booliverse/blob/main/LICENSE">
