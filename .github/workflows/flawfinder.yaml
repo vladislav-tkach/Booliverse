@@ -1,0 +1,26 @@
+---
+name: Run flawfinder
+
+on:
+  push:
+    branches:
+      - main
+      - 'releases/**'
+  pull_request:
+    branches:
+      - main
+      - 'releases/**'
+
+jobs:
+  flawfinder_ubuntu:
+    name: Static check for C++ code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+          
+      - name: Check C++ code
+        uses: deep5050/flawfinder-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+...
