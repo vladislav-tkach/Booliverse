@@ -13,7 +13,7 @@ on:
 
 jobs:
   flawfinder_ubuntu:
-    name: Static check for C++ code
+    name: Check C++ code with flawfinder
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
