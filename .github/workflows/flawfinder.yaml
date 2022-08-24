@@ -21,6 +21,6 @@ jobs:
           
       - name: Check C++ code
         uses: deep5050/flawfinder-action@master
-        with:
+        secrets:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 ...
