@@ -8,6 +8,9 @@
   <a href="https://github.com/marketplace/actions/super-linter">
     <img src="https://github.com/vladislav-tkach/Booliverse/workflows/Run%20Super-Linter/badge.svg?&colorB=555">
   </a>
+  <a href="https://github.com/marketplace/actions/cppcheck-action">
+    <img src="https://github.com/vladislav-tkach/Booliverse/workflows/Run%20Cppcheck/badge.svg?&colorB=555">
+  </a>
   <a href="https://www.linkedin.com/in/vladyslav-tkach/">
     <img src="https://img.shields.io/badge/-LinkedIn-black.svg?&logo=linkedin&colorB=555">
   </a>
