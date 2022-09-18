@@ -17,10 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3.0.2
           
       - name: Check C++ code
-        uses: deep5050/cppcheck-action@main
+        uses: deep5050/cppcheck-action@v3.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 ...

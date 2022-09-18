@@ -17,10 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3.0.2
           
       - name: Check C++ code
-        uses: deep5050/flawfinder-action@master
+        uses: deep5050/flawfinder-action@1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 ...
