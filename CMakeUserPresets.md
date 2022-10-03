@@ -1,4 +1,4 @@
-## CMakeUserPresets.json
+# CMakeUserPresets.json
 
 From CMake documentation:
 > CMakeUserPresets.json is meant for developers to specify their own local build details
