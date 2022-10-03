@@ -1,0 +1,13 @@
+{
+  "version": 5,
+  "configurePresets": [
+    {
+      "name": "custom_toolkit_paths",
+      "hidden": true,
+      "description": "This is base preset for inheritance. It prepends the contents of CustomToolkitPaths environment variable to a local copy of PATH variable",
+      "environment": {
+        "PATH": "$env{CustomToolkitPaths}${pathListSep}$penv{PATH}"
+      }
+    }
+  ]
+}
