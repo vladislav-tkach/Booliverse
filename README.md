@@ -87,7 +87,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-I hate prerequisites/dependencies that you have to install only to build sinle project and not use in any other way. So the only thing you will need to build this project is the C++ toolkit i.e. CMake, build tool and C++ compiler of your choice. If you don't have any tool needed installed on your PC you have two options:
+I hate prerequisites/dependencies that you have to install globally on your PC only to build signle project and not use it anymore. Therefore the only thing you will need to build this project is the C++ toolkit i.e. CMake, build tool and C++ compiler of your choice. (<a href="#how-to-use-a-toolkit-without-installing-it">How to use a toolkit without installing it</a>)
+If you don't have any (except C++ toolkit) dependency needed installed on your PC you have two options:
 * To download it and install on your PC
 * To download it without installing only to build this project
 
@@ -99,7 +100,7 @@ And both are automated! You only have to provide certain flags to CMake during b
    ```sh
    git clone https://github.com/vladislav-tkach/Booliverse.git
    ```
-2. Congigure the project and generate build files
+2. Configure the project and generate build files
    ```sh
    cmake ./Booliverse
    ```
@@ -107,6 +108,10 @@ And both are automated! You only have to provide certain flags to CMake during b
    ```sh
    cmake --build ./Booliverse
    ```
+
+#### How to use a toolkit without installing it
+
+If you for any reason refuse to make changes to PATH environmental variable or you have several toolkits installed on your PC, CMake offers functionality to specify the exact paths to your tools without modifying the PATH. Please go to CMakeUserPresets.md for instructions
 
 
 

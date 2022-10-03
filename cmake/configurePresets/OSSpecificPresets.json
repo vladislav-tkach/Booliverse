@@ -1,0 +1,35 @@
+{
+  "version": 5,
+  "configurePresets": [
+    {
+      "name": "windows_specific_preset",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Windows"
+      },
+      "description": "This is base preset for inheritance. It is only available for Windows"
+    },
+    {
+      "name": "linux_specific_preset",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Linux"
+      },
+      "description": "This is base preset for inheritance. It is only available for Linux"
+    },
+    {
+      "name": "macos_specific_preset",
+      "hidden": true,
+      "condition": {
+        "type": "equals",
+        "lhs": "${hostSystemName}",
+        "rhs": "Darwin"
+      },
+      "description": "This is base preset for inheritance. It is only available for macOS"
+    }
+  ]
+}
