@@ -22,5 +22,5 @@ jobs:
     - name: Configure
       shell: cmake -P {0}
       run: |
-        message($ENV{PATH})
+        execute_process(COMMAND "${CMAKE_COMMAND}" "-E" "environment")
 ...
