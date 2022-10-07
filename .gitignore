@@ -32,8 +32,9 @@
 *.app
 
 # binary folders
-bin/*
-build/*
+bin
+build
+
 
 # local user settings file
 CMakeUserPresets.json
