@@ -5,7 +5,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    name: Build for ${{ matrix.os }} ${{ matrix.compiler}}
+    name: Build for ${{ matrix.os }} ${{ matrix.compiler }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
@@ -23,4 +23,4 @@ jobs:
       shell: cmake -P {0}
       run: |
         echo $ENV{PATH}
----
+...
