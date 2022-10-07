@@ -1,0 +1,26 @@
+---
+name: Run CMake Build Matrix
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Build for ${{ matrix.os }} ${{ matrix.compiler}}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+        compiler: [gcc, Clang]
+        include:
+        - os: windows-latest
+          compiler: MSVC
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Configure
+      shell: cmake -P {0}
+      run: |
+        echo $ENV{PATH}
+---
